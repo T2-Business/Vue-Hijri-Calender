@@ -2,7 +2,7 @@
 ## About
 This is a Hijri / Gregorian Calendar for Vue.js Developed by T2 R&D Team.
 
-## parameters
+## Parameters
 v-model='date' => string containing date with this format 'YYYY-MM-YY'
 
 :minDate  => set min date to allow

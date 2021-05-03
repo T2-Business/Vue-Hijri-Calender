@@ -1,6 +1,8 @@
 # vue-hijri-calander
+## About
+This is a Hijri / Gregorian Calendar for Vue.js Developed by T2 R&D Team.
 
- ## parameter
+## parameter
 v-model='date' => string containing date with this format 'YYYY-MM-YY'
 
 :minDate  => set min date to allow
@@ -10,7 +12,7 @@ v-model='date' => string containing date with this format 'YYYY-MM-YY'
 :isHijri => true to display Hijri Calender false to use Gregorian Calender
 
 :isDisabled => Disable or Enables the Calender
-## Used
+## Usage
 ```
 <template>
   <div id="app">

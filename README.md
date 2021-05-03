@@ -4,15 +4,12 @@ This is a Hijri / Gregorian Calendar for Vue.js Developed by T2 R&D Team.
 
 ## Parameters
 v-model='date' => string containing date with this format 'YYYY-MM-YY'
-
 :minDate  => set min date to allow
-
 :maxDate  => set max date to allow
-
 :isHijri => true to display Hijri Calender false to use Gregorian Calender
-
 :isDisabled => Disable or Enables the Calender
-## Usage
+:showMonthYearSelect => Show / Hide Month and Year Select
+## Usage & Sample
 ```
 <template>
   <div id="app" class="container">

@@ -1,0 +1,57 @@
+{
+  "name": "@t2/vue-hijri-calander",
+  "version": "0.3.17",
+  "private": false,
+  "author": {
+    "name": "Front-End Team"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "lint": "vue-cli-service lint",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/HijriCalender.esm.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/HijriCalender.umd.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/HijriCalender.min.js",
+    "dev": "node build/dev-server.js"
+  },
+  "main": "dist/HijriCalender.umd.js",
+  "module": "dist/HijriCalender.esm.js",
+  "browser": {
+    "./sfc": "src/components/HijriCalender/HijriCalender.vue"
+  },
+  "unpkg": "dist/HijriCalender.min.js",
+  "files": [
+    "src/*",
+    "dist/*",
+    "*.json",
+    "*.js",
+    "*.scss",
+    "*.ts"
+  ],
+  "dependencies": {
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.1.2",
+    "moment": "^2.24.0",
+    "moment-hijri": "^2.1.2",
+    "rollup": "^1.25.1",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-loader": "^15.7.1",
+    "vue-popperjs": "^2.2.0",
+    "vue-property-decorator": "^8.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-typescript": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
